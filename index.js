@@ -18,7 +18,7 @@ async function lookup() {
         "API-Key": localStorage.getItem("apiKey"),
       },},
  	)).json();
- 	if (!stats.success) return alert("Anilist API call did not suceed");
+ 	if (!stats.success) return alert("Hypixel API call did not suceed");
  	console.log(stats.player)
  	let walls = stats?.player?.stats?.Walls;
  	if (!walls) walls = {};
